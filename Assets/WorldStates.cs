@@ -11,11 +11,11 @@ public class WorldState
 
 public class WorldStates
 {
-    public Dictonary<string, int> states;
+    public Dictionary<string, int> states;
 
     public WorldStates()
     {
-        states = new Dictonary<string, int>();
+        states = new Dictionary<string, int>();
     }
 
     public bool HasState(string key)
@@ -23,7 +23,7 @@ public class WorldStates
         return states.ContainsKey(key);
     }
 
-    void AddState(string key, int value)
+    public void AddState(string key, int value)
     {
         states.Add(key, value);
     }
@@ -54,7 +54,7 @@ public class WorldStates
             states.Add(key, value);
     }
 
-    public Dictonary<string, int> GetStates()
+    public Dictionary<string, int> GetStates()
     {
         return states;
     }
